@@ -1,8 +1,8 @@
 export const profile = {
-	fullName: 'Your Name',
+	fullName: 'Clément Sebastiao',
 	title: '',
-	institute: '',
-	author_name: '', // Author name to be highlighted in the papers section
+	institute: 'IT University of Copenhagen',
+	author_name: 'Clément Sebastiao', // Author name to be highlighted in the papers section
 	research_areas: [
 		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
 	],
@@ -10,18 +10,18 @@ export const profile = {
 
 // Set equal to an empty string to hide the icon that you don't want to display
 export const social = {
-	email: '',
-	linkedin: '',
-	x: 'https://www.x.com/',
-	github: '',
+	email: 'clse@itu.dk',
+	linkedin: 'https://www.linkedin.com/in/cl%C3%A9ment-sebastiao-530455315/',
+	x: '',
+	github: 'https://github.com/csebastiao',
 	gitlab: '',
-	scholar: '',
+	scholar: 'https://scholar.google.com/citations?user=9DteMXgAAAAJ',
 	inspire: '',
 	arxiv: '',
 }
 
 export const template = {
-	website_url: 'https://localhost:4321', // Astro needs to know your site’s deployed URL to generate a sitemap. It must start with http:// or https://
+	website_url: 'https://csebastiao.github.io', // Astro needs to know your site’s deployed URL to generate a sitemap. It must start with http:// or https://
 	menu_left: false,
 	transitions: true,
 	lightTheme: 'light', // Select one of the Daisy UI Themes or create your own
