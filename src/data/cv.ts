@@ -45,7 +45,7 @@ export const experiences = [
 		company: "ISI Foundation",
 		location: "Turin, Italy",
 		description: "Nature and Bicycle Network Relationship, with Rossano Schifanella.",
-		time: "October-February 2023",
+		time: "October 2022-February 2023",
 	},
 	{
 		title: "Intern",
