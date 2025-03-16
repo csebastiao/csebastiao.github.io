@@ -44,7 +44,7 @@ export const template = {
 }
 
 export const seo = {
-	default_title: 'Clément Sebastiao page',
-	default_description: 'Clément Sebastiao page.',
+	default_title: 'Clément Sebastiao',
+	default_description: 'Website of Clément Sebastiao.',
 	default_image: '/images/astro-academia.png',
 }
