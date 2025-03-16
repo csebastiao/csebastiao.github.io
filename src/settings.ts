@@ -6,15 +6,15 @@ export const profile = {
 	research_areas: [
 		{
 			title: 'Urban Data Science',
-			description: 'Data-driven and human-centered analysis of urban challenges',
+			description: 'Data-driven and human-centered analysis of urban challenges.',
 		},
 		{
 			title: 'Applied Network Science',
-			description: 'Quantitative network-based modeling',
+			description: 'Quantitative network-based modeling.',
 		},
 		{
 			title: 'Sustainable Mobility',
-			description: '',
+			description: 'Development of ecologically and socially just mode of transports.',
 		},
 		
 	],
