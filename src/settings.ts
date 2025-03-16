@@ -4,7 +4,19 @@ export const profile = {
 	institute: 'IT University of Copenhagen',
 	author_name: 'Clément Sebastiao', // Author name to be highlighted in the papers section
 	research_areas: [
-		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
+		{
+			title: 'Urban Data Science',
+			description: 'Data-driven and human-centered analysis of urban challenges',
+		},
+		{
+			title: 'Applied Network Science',
+			description: 'Quantitative network-based modeling',
+		},
+		{
+			title: 'Sustainable Mobility',
+			description: '',
+		},
+		
 	],
 }
 
