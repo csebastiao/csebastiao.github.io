@@ -99,7 +99,3 @@ export const skills = [
 	// 	description: 'Spectroscopy, Isolation of Radioactive Elements, Radiation Measurement',
 	// },
 ];
-	// 	link: '#',
-	// 	abstract: 'Early research leading to the identification of uranium’s radioactive properties.',
-	// },
-];
