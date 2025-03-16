@@ -26,21 +26,6 @@ const { research_areas } = profile;
       {
         research_areas.map((area) => (
           <div class="flex gap-6 items-start">
-            <BetterIcon>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke-width="2"
-                class="size-6 stroke-accent"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d={RESEARCH_ICONS[area.field as keyof typeof RESEARCH_ICONS]?.path || RESEARCH_ICONS['computer-science'].path}
-                />
-              </svg>
-            </BetterIcon>
             <div>
               <h3 class="text-xl font-semibold mb-2">{area.title}</h3>
               <p class="text-base">{area.description}</p>
