@@ -19,7 +19,7 @@ export const education = [
 	},
 ];
 
-export const experience = [
+export const experiences = [
 	{
 		title: "PhD Student",
 		company: "IT University of Copenhagen",
