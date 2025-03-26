@@ -47,9 +47,9 @@ const { title, description, image } = Astro.props
 
 <!-- Theme selector scripts -->
 <script is:inline>
-  // Get stored theme or default to light
+  // Get stored theme or default to bumblebee
   const getStoredTheme = () => {
-    return localStorage.getItem('theme') || 'light';
+    return localStorage.getItem('theme') || 'bumblebee';
   }
 
   // Apply theme immediately to prevent flash
