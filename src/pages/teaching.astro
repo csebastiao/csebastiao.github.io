@@ -1,0 +1,28 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { profile } from "@/settings";
+import BetterIcon from "@/components/ui/BetterIcon.astro";
+import List from "@/components/ui/List.astro";
+import {RESEARCH_ICONS} from "@/data/researchIcons";
+
+const { research_areas } = profile;
+---
+
+<Layout title="Teaching | Clément Sebastiao">
+  <div class="prose max-w-none">
+
+    <h2 class="text-2xl font-bold mb-6">Lectures</h2>
+
+    <List listTitle="Current Projects" listItems={[
+      {
+        title: "IT and Green Transitions",
+        description: "Single lecture co-teached with Anastassia Vybornova about Urban Data Science. 7.5 ECTS course, for Bachelor students in Global Business Informations and Master students in Digital Innovation Management. The course aims at giving the students an introduction to the complexities of determining how processes of digitalisation and green transitions are entangled."
+      },
+      {
+        title: "Geospatial Data Science",
+        description: "Course Manager and single lecturer of the full course. 7.5 ECTS course, for Master students in Data Science. This course provides an introduction into core concepts and applications of data science based approaches to geospatial data analysis."
+      },
+    ]} />
+
+  </div>
+</Layout>
