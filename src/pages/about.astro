@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
 import { ABOUT } from "@consts";
+import Link from "@components/Link.astro";
 import Image from "astro/components/Image.astro";
 ---
 
@@ -11,40 +12,41 @@ import Image from "astro/components/Image.astro";
     <aside data-pagefind-ignore>
       <div class="space-y-10">
         <div class="animate font-semibold text-black dark:text-white">
-          About
+          About myself
         </div>
         <section class="animate not-prose flex flex-col gap-4 text-justify">
-          <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro hic minima incidunt explicabo obcaecati consectetur consequuntur at quisquam commodi.
-          </p>      
-          
-          <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro hic minima incidunt explicabo obcaecati consectetur consequuntur at quisquam commodi.
+          <p class="text-justify">Born in France, I am doing my PhD now in Copenhagen. Before that, in my previous 
+            <Link href="https://csebastiao.github.io/CV/">
+                  work experiences
+            </Link>
+            I worked in several other places in France (Marseille, Lyon, Grenoble, and Besançon) and in Turin.
           </p>
+
+          <p class="text-justify">On my free time, I mostly play video games and read books (essays and literature),
+            and I am always looking to expand the neverending list of recommendations for both.
+          </p>
+
+          <p class="text-justify">I wanted to do research as a child when I discovered that you can be paid to 
+            learn, discover, and share that with others. I still have that childish wonder, but now I also believe
+            that I can also support societal changes through my work. I am standing on the shoulder of giants,
+            not only scientific ones but also the ones from everyone who gave me the privileges to do that job.
+          </p>
+
         </section>
 
         <div class="flex flex-col md:flex-row justify-center">
           <div class="my-10 text-center">
-            <div class="bg-neutral-300 w-[350px] h-[250px] object-cover rounded-xl -rotate-6 overflow-hidden">
+            <div class="bg-neutral-300 w-[350px] h-[350px] object-cover rounded-xl overflow-hidden">
               <Image
-                src={'/astro-nano.png'}
-                alt={'life2'}
+                src={'/picture-me.jpg'}
+                alt={'Picture of myself'}
                 width={350}
                 height={250}
-                class="w-[350px] h-[250px] object-cover rounded-xl overflow-hidden"
+                class="w-[350px] h-[350px] object-cover rounded-xl overflow-hidden"
               />
             </div>
-            <p class="mt-4 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+            <p class="mt-4 text-sm">Say hi whenever 👋</p>
           </div>
-          <div class="mx-10 my-10 text-center">
-            <div class="bg-neutral-300 w-[150px] h-[250px] object-cover rounded-xl rotate-6 mx-auto sm:ml-auto">
-              <Image
-                src={'/astro-micro.jpg'}
-                alt={'life2'}
-                width={150}
-                height={250}
-                class="w-[150px] h-[250px] object-cover rounded-xl "
-              />
-            </div>
-            <p class="mt-4 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
         </div>
       </div>

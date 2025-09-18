@@ -3,20 +3,37 @@ import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
 import { CV } from "@consts";
+import Link from "@components/Link.astro";
 import CVCard from "@components/CVCard.astro";
 
 // TO Modify
 const works = [
-  {company:"Company A", time: "2022-Present", job_title: "Research Scientist", location: "London, UK", description: "Your Notes about the job"},
-  {company:"Company A", time: "2022-Present", job_title: "Research Scientist", location: "London, UK", description: "Your Notes about the job"},
+  {company:"IT University of Copenhagen", time: "April 2024-Present", job_title: "PhD Student", location: "Copenhagen, Denmark", description: "Optimizing urban sustainable mobility networks, part of the Just Streets EU Horizon Program. Supervised by Michael Szell and Luca Maria Aiello."},
+  {company:"IT University of Copenhagen", time: "January-April 2025", job_title: "Research Assistant", location: "Copenhagen, Denmark", description: "Course Manager and Lecturer of the Geospatial Data Science course."},
+  {company:"IT University of Copenhagen", time: "January-March 2024", job_title: "Research Assistant", location: "Copenhagen, Denmark", description: "Starting doctoral studies."},
+  {company:"Université de Franche-Comté", time: "February-July 2023", job_title: "Intern", location: "Besançon, France", description: "Mode of Transport and Historical Road Network Growth Relationship, supervised by Claire Lagesse."},
+  {company:"ISI Foundation", time: "October 2022-February 2023", job_title: "Intern", location: "Turin, Italy", description: "Nature and Bicycle Network Relationship, supervised by Rossano Schifanella."},
+  {company:"IT University of Copenhagen", time: "February-July 2022", job_title: "Intern", location: "Copenhagen, Denmark", description: "Prioritizing Links in Bicycle Network Plans With Subtractive Network Optimization, supervised by Michael Szell."},
+  {company:"LIPHY Laboratory for Interdisciplinary Physics", time: "May-July 2021", job_title: "Intern", location: "Grenoble, France", description: "Collective Motion of Schooling Fish in a Complex Environment, supervised by Aurélie Dupont and Philippe Peyla."},
+  {company:"Ecole Normale Supérieure de Lyon", time: "June-July 2020", job_title: "Intern", location: "Lyon, France", description: "Deep Learning for Time Series Predictions for FECG Monitoring, supervised by Pierre Borgnat and Patrice Abry."},
+  {company:"IM2NP", time: "June-July 2019", job_title: "Intern", location: "Marseille, France", description: "Study of Optically Excited Magnetic States of ZnO by EPR, supervised by Adrien Savoyant."},
 ]
 const educations = [
-  {school:"University 1", time: "2022-Present", job_title: "BEng in Electronic Information Engineering", location: "London, UK", description: "Your Notes about the study"},
+  {school:"Ecole Normale Supérieure de Lyon", time: "2019-2023", job_title: "ENS Lyon Diploma", location: "Lyon, France", description: ""},
+  {school:"Ecole Normale Supérieure de Lyon", time: "2020-2022", job_title: "Master degree in Complex Systems, Physics", location: "Lyon, France", description: ""},
+  {school:"Claude Bernard University Lyon 1", time: "2017-2020", job_title: "Bachelor degree in Physics", location: "Lyon, France", description: ""}
 ]
 ---
 
 <Layout title={CV.TITLE} description={CV.DESCRIPTION}>
   <Container>
+    <div class="animate font-semibold text-black dark:text-white", style="margin-bottom: 40px;">
+        You can also find a more complete, PDF version here: 
+        <a href="/CV.pdf" target="_blank" rel="noopener noreferrer">
+          📃
+        </a>
+    </div>
+    
     <aside data-pagefind-ignore>
       <div class="space-y-2 md:space-y-10">
         <div class="animate font-semibold text-black dark:text-white">
