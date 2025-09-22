@@ -1,5 +1,5 @@
 ---
-title: "To start a blog as a blog skepticcs"
+title: "To start a blog as a blog skeptic"
 description: "Why ? Why should I create something that can make me less productive ? I'm still unsure."
 date: "2025-03-1"
 tags: ['personnal']

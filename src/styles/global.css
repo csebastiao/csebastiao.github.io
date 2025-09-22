@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/public/fonts/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('/public/fonts/Barlow-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 19px; /* For global size of text */
+}
+
 html {
   overflow-y: auto;
   color-scheme: light;
@@ -27,7 +46,7 @@ body {
 header {
   @apply fixed left-0 right-0 top-0 z-50 py-6;
   @apply bg-neutral-100/75 dark:bg-neutral-900/75;
-  @apply saturate-200 backdrop-blur-sm;
+  @apply backdrop-blur-sm;
 }
 
 main {
