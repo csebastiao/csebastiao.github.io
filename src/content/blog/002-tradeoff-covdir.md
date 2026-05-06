@@ -8,7 +8,7 @@ tags:
 ---
 
 
-# Publication: The trade-off between directness and coverage in transport network growth
+## Publication: The trade-off between directness and coverage in transport network growth
 
 Cities are announcing ambitious bicycle plans. We know where bicycle lanes will be built, but one question remain: in what order should we build them ?
 
